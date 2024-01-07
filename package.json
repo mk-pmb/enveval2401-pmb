@@ -1,5 +1,5 @@
 { "name": "enveval2401-pmb",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "This adapter simplifies interaction between node.js and bash.",
   "keywords": [],
 
