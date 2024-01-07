@@ -1,0 +1,40 @@
+{ "name": "enveval2401-pmb",
+  "version": "0.0.1",
+  "description": "This adapter simplifies interaction between node.js and bash.",
+  "keywords": [],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/enveval2401-pmb/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/enveval2401-pmb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/enveval2401-pmb/issues"
+  },
+  "contributors": [],
+
+  "private": false, "license": "ISC",
+
+  "main": "index.js",
+  "scripts": { "test": "elp && bash test/all.sh" },
+  "directories": { "test": "test" },
+  "eslintConfig": { "extends": "nodejs-pmb" },
+
+  "dependencies": {
+    "ceson": "^0.1.5",
+    "p-fatal": "^0.1.5",
+    "read-data-file": "^2.0.8",
+    "shq": "^1.0.3",
+    "usnam-pmb": "^0.2.5"
+  },
+  "devDependencies": {
+    "eslint-config-nodejs-pmb": "^0.3.5",
+    "eslint-plugin-json-light-pmb": "^1.0.7",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-pretty-pmb": "^1.0.5"
+  },
+
+
+  "engines": { "npm": ">=7.0.0", "node": ">=16.0.0" }
+}
