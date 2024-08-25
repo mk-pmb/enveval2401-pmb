@@ -1,5 +1,5 @@
 { "name": "enveval2401-pmb",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This adapter simplifies interaction between node.js and bash.",
   "keywords": [],
 
@@ -16,6 +16,7 @@
 
   "private": false, "license": "ISC",
 
+  "bin": "index.js",
   "main": "index.js",
   "scripts": { "test": "elp && bash test/all.sh" },
   "directories": { "test": "test" },
@@ -24,12 +25,13 @@
   "dependencies": {
     "ceson": "^0.1.5",
     "p-fatal": "^0.1.5",
-    "read-data-file": "^2.0.8",
+    "read-data-file": "^2.0.11",
     "shq": "^1.0.3",
+    "txtrafo": "^0.0.3",
     "usnam-pmb": "^0.2.5"
   },
   "devDependencies": {
-    "eslint-config-nodejs-pmb": "^0.3.5",
+    "eslint-config-nodejs-pmb": "^0.3.6",
     "eslint-plugin-json-light-pmb": "^1.0.7",
     "eslint-plugin-n": "^15.2.4",
     "eslint-pretty-pmb": "^1.0.5"
