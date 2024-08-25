@@ -1,4 +1,5 @@
-﻿/* eslint-disable no-unused-vars, no-eval, prefer-const */
+#!/usr/bin/env node
+/* eslint-disable no-unused-vars, no-eval, prefer-const */
 'use strict';
 
 require('usnam-pmb');
@@ -8,6 +9,7 @@ const parseCeson = require('ceson/parse.js');
 const readDataFile = require('read-data-file');
 const shq = require('shq');
 const toBashDict = require('shq/bonus/dict2bash.js');
+const txtrafo = require('txtrafo');
 
 function toBashDictSp(x) { return toBashDict(x, { glue: ' ' }); }
 function toBashDictNl(x) { return toBashDict(x, { glue: '\n' }); }

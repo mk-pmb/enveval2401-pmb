@@ -12,13 +12,13 @@ CHAT_JSON='{
 
 echo '// Message texts printed shell-safe:'
 CODE='data.chat.forEach(x => clog(shq(x.msg)))
-  ' DATA="$CHAT_JSON" node -r enveval2401-pmb -e 0
+  ' DATA="$CHAT_JSON" enveval2401-pmb
 #= hello
 #= 'what'\''s up?'
 
 echo '// Messages as bash dicts entries:'
 CODE='data.chat.forEach(x => clog(toBashDictSp(x)))
-  ' DATA="$CHAT_JSON" node -r enveval2401-pmb -e 0
+  ' DATA="$CHAT_JSON" enveval2401-pmb
 #= [nick]=Bernd [msg]=hello
 #= [nick]=Bernd [msg]='what'\''s up?'
 
