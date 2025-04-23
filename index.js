@@ -5,11 +5,18 @@
 require('usnam-pmb');
 require('p-fatal');
 
+const loMapValues = require('lodash.mapvalues');
+const objDive = require('objdive');
 const parseCeson = require('ceson/parse.js');
 const readDataFile = require('read-data-file');
 const shq = require('shq');
 const toBashDict = require('shq/bonus/dict2bash.js');
 const txtrafo = require('txtrafo');
+
+function num0(x) { return +x || 0; }
+function or0(x) { return x || 0; }
+function ores(x) { return x || ''; }
+function orf(x) { return x || false; }
 
 function toBashDictSp(x) { return toBashDict(x, { glue: ' ' }); }
 function toBashDictNl(x) { return toBashDict(x, { glue: '\n' }); }
